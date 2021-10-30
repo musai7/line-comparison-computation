@@ -16,9 +16,12 @@ public class CompareLinesEqGreaterOrLess {
 		p2 = sc.nextInt();
 		q2 = sc.nextInt();
 		int lenght2 = (int) Math.sqrt((p2 - p1) * (p2 - p1) + (q2 - q1) * (q2 - q1));
-		if (lenght1 == lenght2) {
+		Integer len1=lenght1;
+		Integer len2=lenght2;
+		int res =len1.compareTo(len2);
+		if (res == 0) {
 			System.out.println(" two line lenghts are equal ");
-		} else if (lenght1 > lenght2) {
+		} else if (res > 0) {
 			System.out.println(" line One lenght is greater than line two lenght  ");
 		} else {
 			System.out.println(" line One lenght is lesser than line two lenght  ");
